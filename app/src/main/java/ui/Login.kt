@@ -60,7 +60,7 @@ fun LoginScreen(
         biometricManager.canAuthenticate(BiometricManager.Authenticators.BIOMETRIC_STRONG) ==
                 BiometricManager.BIOMETRIC_SUCCESS
 
-    // ✅ ANIMATION STATE (added)
+    //  ANIMATION STATE (added)
     val scale = remember { Animatable(0.5f) }
 
     LaunchedEffect(true) {
@@ -76,7 +76,7 @@ fun LoginScreen(
         verticalArrangement = Arrangement.Center
     ) {
 
-        // ✅ ANIMATED ICON (replaced only this part)
+        // ANIMATED ICON (replaced only this part)
         Icon(
             Icons.Default.Lock,
             contentDescription = null,
