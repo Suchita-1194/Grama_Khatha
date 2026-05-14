@@ -100,18 +100,18 @@ com.example.gramakhata
 
 1. Clone repository
 bash
+git clone https://github.com/Suchita-1194/Grama_Khatha.git
 
 
-2. Open in Android Studio
+3. Open in Android Studio
 
-3. Sync Gradle
+4. Sync Gradle
 
-4. Run on:
+5. Run on:
 - Physical Android device
 OR
 - Pixel Emulator with Google Play
 
----
 ---
 
 📱 App Workflow
