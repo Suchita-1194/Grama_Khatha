@@ -18,7 +18,7 @@ fun SettingsScreen(
     onNavigateBack: () -> Unit
 ) {
     val storedPin by viewModel.storedPin.collectAsState()
-    val isDark by viewModel.isDarkMode.collectAsState() // ✅ ADDED
+    val isDark by viewModel.isDarkMode.collectAsState() // ADDED
     var showChangePinDialog by remember { mutableStateOf(false) }
 
     Scaffold(
