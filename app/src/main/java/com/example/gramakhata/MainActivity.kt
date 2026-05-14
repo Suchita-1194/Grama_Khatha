@@ -17,13 +17,13 @@ class MainActivity : FragmentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
 
-            // ✅ MOVE VIEWMODEL ABOVE THEME
+            //  MOVE VIEWMODEL ABOVE THEME
             val viewModel: KhataViewModel = viewModel()
 
-            // ✅ ADD THIS (dark mode state)
+            //  ADD THIS (dark mode state)
             val isDark by viewModel.isDarkMode.collectAsState()
 
-            // ✅ APPLY THEME WITH DARK MODE
+            // APPLY THEME WITH DARK MODE
             GramaKhataTheme(darkTheme = isDark) {
 
                 val isLoggedIn by viewModel.isLoggedIn.collectAsState()
