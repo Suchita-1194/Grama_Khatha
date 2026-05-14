@@ -40,7 +40,7 @@ fun DashboardScreen(
         customers.sumOf { it.totalDue }
     }
 
-    // ✅ SORTED CUSTOMERS
+    //  SORTED CUSTOMERS
     val sortedCustomers = remember(customers) {
         viewModel.getSortedCustomers(customers)
     }
@@ -51,7 +51,7 @@ fun DashboardScreen(
                 title = { Text("Grama Khata", fontWeight = FontWeight.Bold) },
                 actions = {
 
-                    // ✅ DAILY REPORT
+                    // DAILY REPORT
                     IconButton(onClick = {
                         val report = viewModel.generateDailyReport(recentTransactions)
 
@@ -126,7 +126,7 @@ fun DashboardScreen(
                 )
             }
 
-            // ✅ SORTED LIST
+            // SORTED LIST
             items(sortedCustomers.take(5)) { customer ->
                 CustomerDashboardItem(
                     customer = customer,
@@ -223,7 +223,7 @@ fun SummaryCard(totalDue: Int) {
             modifier = Modifier
                 .padding(24.dp)
                 .fillMaxWidth(),
-            horizontalAlignment = Alignment.Start // ✅ FIX
+            horizontalAlignment = Alignment.Start //  FIX
         ) {
 
             Text(
@@ -298,7 +298,7 @@ fun CustomerDashboardItem(
 
                 Spacer(Modifier.width(8.dp))
 
-                // ✅ REMINDER BUTTON
+                // REMINDER BUTTON
                 IconButton(onClick = {
                     val message = viewModel.generateReminderMessage(
                         "Grama Khata",
