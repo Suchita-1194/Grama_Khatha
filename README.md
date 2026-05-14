@@ -94,7 +94,24 @@ com.example.gramakhata
 └── theme
     └── UI Theme Files
 
+---
 
+▶️ Running the App
+
+1. Clone repository
+bash
+
+
+2. Open in Android Studio
+
+3. Sync Gradle
+
+4. Run on:
+- Physical Android device
+OR
+- Pixel Emulator with Google Play
+
+---
 ---
 
 📱 App Workflow
