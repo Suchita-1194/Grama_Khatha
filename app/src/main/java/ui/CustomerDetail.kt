@@ -152,7 +152,7 @@ fun CustomerDetailScreen(
 
                     Spacer(modifier = Modifier.height(12.dp))
 
-                    // ✅ PERFECTLY ALIGNED CREDIT / DEBIT
+                    //  PERFECTLY ALIGNED CREDIT / DEBIT
                     Row(
                         modifier = Modifier.fillMaxWidth(),
                         horizontalArrangement = Arrangement.SpaceEvenly,
